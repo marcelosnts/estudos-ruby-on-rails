@@ -1,0 +1,55 @@
+<%= form_for(@contact, html: { class: "basic-grey" }) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <h1>Contatos</h1>
+
+  <div class="field">
+    <label>
+      <span>
+        <%= f.label :name %><br>
+      </span>
+    </label>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <label>
+      <span>
+        <%= f.label :email %><br>
+      </span>
+    </label>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <label>
+      <span>
+        <%= f.label :kind_id %><br>
+      </span>
+    </label>
+    <!--<%= f.text_field :kind_id %>-->
+    <%= collection_select(:contact, :kind_id, @options, :id, :description) %>
+  </div>
+  <div class="field">
+    <label>
+      <span>
+        <%= f.label :rmk %><br>
+      </span>
+    </label>
+    <%= f.text_area :rmk %>
+  </div>
+  <div class="left-margin">
+    <div class="actions">
+      <%= f.submit "Enviar", class: "button" %>
+      <%= link_to 'Back', contacts_path, class: "button-back" %>
+    </div>
+  </div>
+<% end %>
