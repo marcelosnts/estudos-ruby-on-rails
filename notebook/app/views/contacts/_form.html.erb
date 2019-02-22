@@ -34,10 +34,37 @@
       <span>
         <%= f.label :kind_id %><br>
       </span>
-    </label>
-    <!--<%= f.text_field :kind_id %>-->
+    </label>      
     <%= collection_select(:contact, :kind_id, @options, :id, :description) %>
   </div>
+    
+  <%= f.fields_for :address do |address_fields| %>
+    <div class="field">
+      <label>
+        <span>
+          <%= address_fields.label :street %>
+        </span>
+      </label>
+      <%= address_fields.text_field :street %> 
+    </div>
+    <div class="field">
+      <label>
+        <span>
+          <%= address_fields.label :city %>
+        </span>
+      </label>
+      <%= address_fields.text_field :city %> 
+    </div>
+    <div class="field">
+      <label>
+        <span>
+          <%= address_fields.label :state %>
+        </span>
+      </label>
+      <%= address_fields.text_field :state %> 
+    </div>
+  <% end %>
+
   <div class="field">
     <label>
       <span>
