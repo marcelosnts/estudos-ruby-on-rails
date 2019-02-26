@@ -1,0 +1,38 @@
+"pt-BR":
+    messages:
+        confirm: Esta operação não pode ser desfeita, quer continuar?
+        listing: Listando
+    buttons:
+        new: Novo
+        show: Ver
+        edit: Editar
+        destroy: Apagar
+    
+    activerecord:
+        models:
+            contact:
+                one: Contato
+                other: Contatos
+            address: 
+                one: Endereço
+                other: Endereços
+            phone:
+                one: Telefone
+                other: Telefones
+        attributes:
+            contact:
+                name: Nome
+                email: E-mail
+                kind: Tipo de Contato
+                kind_id: Tipo de Contato
+                rmk: Observação
+            address:
+                street: Rua
+                city: Cidade
+                state: Estado
+                contact_id: Contato
+                contact: Contato
+            kind:
+                description: Tipo de Contato
+            phone:
+                phone: Telefone

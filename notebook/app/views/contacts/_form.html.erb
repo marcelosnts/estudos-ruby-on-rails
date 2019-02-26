@@ -35,7 +35,7 @@
         <%= f.label :kind_id %><br>
       </span>
     </label>      
-    <%= collection_select(:contact, :kind_id, @options, :id, :description) %>
+    <%= f.collection_select(:kind_id, @options, :id, :description) %>
   </div>
     
   <%= f.fields_for :address do |address_fields| %>
@@ -61,7 +61,18 @@
           <%= address_fields.label :state %>
         </span>
       </label>
-      <%= address_fields.text_field :state %> 
+      <%= address_fields.select :state, options_for_states(@contact.address.state) %> 
+    </div>
+  <% end %>
+
+  <%= f.fields_for :phones do |phones_fields| %>
+    <div class="field">
+      <label>
+        <span>
+          <%= phones_fields.label :phone %>
+        </span>
+      </label>
+      <%= phones_fields.text_field :phone %> 
     </div>
   <% end %>
 
