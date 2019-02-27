@@ -1,0 +1,11 @@
+<div class="nested-fields">
+    <div class="field">
+        <label>
+            <span>
+                <%= f.label :phone %>
+            </span>
+        </label>
+        <%= f.text_field :phone, class: "phone_field" %> 
+        <%= link_to_remove_association('[Remover Telefone]', f) %>
+    </div>
+</div>

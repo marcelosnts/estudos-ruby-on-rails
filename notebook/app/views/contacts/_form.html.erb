@@ -65,17 +65,21 @@
     </div>
   <% end %>
 
-  <%= f.fields_for :phones do |phones_fields| %>
+  <div id="phones">
+    <%= f.fields_for :phones do |phones_fields| %>
+      <%= render partial: "phone_fields", locals: {f: phones_fields} %>
+    <% end %>
+    
     <div class="field">
       <label>
         <span>
-          <%= phones_fields.label :phone %>
+          <%= f.label :phones, "-" %>
         </span>
+        <%= link_to_add_association('[Adicionar Telefone]', f, :phones) %>
       </label>
-      <%= phones_fields.text_field :phone %> 
     </div>
-  <% end %>
-
+  </div>
+  <br>
   <div class="field">
     <label>
       <span>
