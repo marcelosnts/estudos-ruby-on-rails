@@ -1,8 +1,11 @@
-<h1>Seja Bem-Vindo</h1>
+<div class="basic-grey">
+	<h1>Seja Bem-Vindo</h1>
 
-<ul>
-	<li><%= link_to "Tipos", kinds_path %></li>
-	<li><%= link_to "Endereços", addresses_path %></li>
-	<li><%= link_to "Contatos", contacts_path %></li>
-	<li><%= link_to "Telefones", phones_path %></li>
-</ul>
+	<ul>
+		<li><%= link_to "Tipos", kinds_path %></li>
+		<li><%= link_to "Endereços", addresses_path %></li>
+		<li><%= link_to "Contatos", contacts_path %></li>
+		<li><%= link_to "Telefones", phones_path %></li>
+		<li><%= link_to "Teste AJAX", phones_path, remote: true %></li>
+	</ul>
+</div>

@@ -4,7 +4,7 @@ namespace :utils do
     
     # PopularContatos
     puts "Gerando os contatos (Contacts): "
-    4.times do |item| 
+    100.times do |item| 
         contato = Contact.create!(
             name: Faker::Name.name,                     # Gera um nome fake
             email: Faker::Internet.email,               # Gera um email fake
