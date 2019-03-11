@@ -26,11 +26,11 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Bundler-like DSL + rake tasks for Bower on Rails 
-gem 'bower-rails', '~> 0.10.0'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem "cocoon"
 
+# JQuery plugin to provide simple yet fully customisable notifications.
+gem 'rails-assets-notifyjs', source: 'http://insecure.rails-assets.org'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
 # Use ActiveModel has_secure_password
