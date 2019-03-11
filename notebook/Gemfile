@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'bundler', '>= 1.8.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # A library for generating fake data such as names, addresses, and phone numbers. 
@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Bundler-like DSL + rake tasks for Bower on Rails 
+gem 'bower-rails', '~> 0.10.0'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms
 gem "cocoon"
 
