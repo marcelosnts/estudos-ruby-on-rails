@@ -31,6 +31,10 @@ gem "cocoon"
 
 # JQuery plugin to provide simple yet fully customisable notifications.
 gem 'rails-assets-notifyjs', source: 'http://insecure.rails-assets.org'
+# BOOTSTRAP
+gem 'rails-assets-bootstrap', source: 'http://insecure.rails-assets.org'
+# Font Awesome
+gem 'rails-assets-font-awesome-bower', source: 'http://insecure.rails-assets.org'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
 # Use ActiveModel has_secure_password

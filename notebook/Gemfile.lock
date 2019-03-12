@@ -110,6 +110,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.2.5)
       sprockets-rails
+    rails-assets-bootstrap (4.1.3)
+    rails-assets-font-awesome-bower (4.7.0)
     rails-assets-notifyjs (0.4.2)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -185,6 +187,8 @@ DEPENDENCIES
   jquery-rails
   kaminari
   rails (= 4.2.5)
+  rails-assets-bootstrap!
+  rails-assets-font-awesome-bower!
   rails-assets-notifyjs!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

@@ -5,7 +5,7 @@ class PhonesController < ApplicationController
   # GET /phones.json
   def index
     respond_to do |format|
-      format.html {@phones = Phone.all}
+      format.html {@phones = Phone.order(:contact_id).page(params[:page]).per 15}
       format.js {}
     end
   end

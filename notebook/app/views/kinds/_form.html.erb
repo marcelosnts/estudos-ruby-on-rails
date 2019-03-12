@@ -12,18 +12,20 @@
 
   <h1>Tipos</h1>
 
-  <div class="field">
-    <label>
-      <span>
-        <%= f.label :description %><br>
-      </span>
-    </label>
-    <%= f.text_field :description %>
+  <div class="form-horizontal">
+    <div class="row col-md-12">
+      <label class="col-md-3">
+        <span>
+          <%= f.label :description %><br>
+        </span>
+      </label>
+      <%= f.text_field :description, class: "form-control col-md-8" %>
+    </div>
   </div>
   <div class="left-margin">
     <div class="actions">
-      <%= f.submit "Enviar", class: "button" %>
-      <%= link_to 'Back', kinds_path, class: "button-back" %>
+      <%= f.submit "Enviar", class: "btn btn-primary" %>
+      <%= link_to 'Back', kinds_path, class: "btn btn-success" %>
     </div>
   </div>
 <% end %>

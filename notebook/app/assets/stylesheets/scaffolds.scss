@@ -2,12 +2,10 @@
 .basic-grey {
 	margin-left:auto;
 	margin-right:auto;
-    max-width: 500px;
+    max-width: 1024px;
     background: #F7F7F7;
     padding: 25px 15px 25px 10px;
-    font: 12px Georgia, "Times New Roman", Times, serif;
     color: #888;
-    text-shadow: 1px 1px 1px #FFF;
     border:1px solid #E4E4E4;
 }
 .basic-grey h1 {
@@ -22,110 +20,11 @@
     display: block;
     font-size: 11px;
 }
-.basic-grey label {
-    display: block;
-    margin: 0px;
-}
-.basic-grey label>span {
-    float: left;
-    width: 20%;
-    text-align: right;
-    padding-right: 10px;
-    margin-top: 10px;
-    color: rgb(121, 121, 121);
-}
-.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
-	border: 1px solid #DADADA;
-	color: #888;
-	height: 30px;
-	margin-bottom: 16px;
-	margin-right: 6px;
-	margin-top: 2px;
-	outline: 0 none;
-	padding: 3px 3px 3px 5px;
-	width: 70%;
-	font-size: 12px;
-	line-height:15px;
-	box-shadow: inset 0px 1px 4px #ECECEC;
-	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
-	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
-}
-.basic-grey textarea{
-	padding: 5px 3px 3px 5px;
-}
-.basic-grey select {
-    background: #FFF image-url('down-arrow.png') no-repeat right;
-    background: #FFF image-url('down-arrow.png') no-repeat right;
-    appearance:none;
-    -webkit-appearance:none; 
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width: 70%;
-    height: 35px;
-	line-height: 25px;
-}
-.basic-grey textarea{
-    height:100px;
-}
-.basic-grey .button {
-	background: rgb(43, 165, 69);
-	border: none;
-	padding: 10px 25px 10px 25px;
-	color: #FFF;
-	box-shadow: 1px 1px 5px #B6B6B6;
-	border-radius: 3px;
-	text-shadow: 1px 1px 1px #9E3F3F;
-    cursor: pointer;
-    line-height: 16px;
-    font-size: 13px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-.basic-grey .button:hover {
-    background: rgb(27, 112, 44);
-}
-
-.basic-grey .button-back {
-	background: #E27575;
-	border: none;
-	padding: 11px 25px 10px 25px;
-	color: #FFF;
-	box-shadow: 1px 1px 5px #B6B6B6;
-	border-radius: 3px;
-	text-shadow: 1px 1px 1px #9E3F3F;
-    cursor: pointer;
-    line-height: 16px;
-    font-size: 13px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-.basic-grey .button-back:hover {
-    background: #CF7A7A
-}
-.left-margin {
-    padding-left: 110px;
-}
-
-.basic-grey input[type="text"].phone_field {
-	border: 1px solid #DADADA;
-	color: #888;
-	height: 30px;
-	margin-bottom: 16px;
-	margin-right: 6px;
-	margin-top: 2px;
-	outline: 0 none;
-	padding: 3px 3px 3px 5px;
-	width: 45%;
-	font-size: 12px;
-	line-height:15px;
-	box-shadow: inset 0px 1px 4px #ECECEC;
-	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
-	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
-}
-
-.basic-grey a {
-    color: #888;
-}
 
 .basic-grey table {
 	width: 100%;
+}
+
+.basic-grey h1 {
+	text-align: center;
 }

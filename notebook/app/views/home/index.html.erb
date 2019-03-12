@@ -1,11 +1,21 @@
 <div class="basic-grey">
 	<h1>Seja Bem-Vindo</h1>
 
-	<ul>
-		<li><%= link_to "Tipos", kinds_path %></li>
-		<li><%= link_to "Endereços", addresses_path %></li>
-		<li><%= link_to "Contatos", contacts_path %></li>
-		<li><%= link_to "Telefones", phones_path %></li>
-		<li><%= link_to "Teste AJAX", phones_path, remote: true %></li>
-	</ul>
+	<div class="col-md-12">
+		<div class="row">
+			<span class="fa fa-info col-md-1"></span><%= link_to "Tipos", kinds_path %>
+		</div>
+		<div class="row">
+			<span class="fa fa-map-o col-md-1"></span><%= link_to "Endereços", addresses_path %>	
+		</div>
+		<div class="row">
+			<span class="fa fa-id-card col-md-1"></span><%= link_to "Contatos", contacts_path %>	
+		</div>
+		<div class="row">
+			<span class="fa fa-mobile-phone col-md-1"></span><%= link_to "Telefones", phones_path %>	
+		</div>
+		<div class="row">
+			<span class="fa col-md-1"></span><%= link_to "Teste AJAX", phones_path, remote: true %>	
+		</div>
+	</div>
 </div>

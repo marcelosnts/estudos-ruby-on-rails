@@ -11,6 +11,7 @@
         show: Ver
         edit: Editar
         destroy: Apagar
+        home: Inicio
     
     activerecord:
         models:
@@ -23,6 +24,9 @@
             phone:
                 one: Telefone
                 other: Telefones
+            kind: 
+                one: Tipo
+                other: Tipos
         attributes:
             contact:
                 name: Nome
