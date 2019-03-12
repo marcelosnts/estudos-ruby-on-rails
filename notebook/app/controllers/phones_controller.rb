@@ -31,7 +31,7 @@ class PhonesController < ApplicationController
 
     respond_to do |format|
       if @phone.save
-        format.html { redirect_to @phone, notice: 'Phone was successfully created.' }
+        format.html { redirect_to phones_path, notice: I18n.t("messages.created") }
         format.json { render :show, status: :created, location: @phone }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class PhonesController < ApplicationController
   def update
     respond_to do |format|
       if @phone.update(phone_params)
-        format.html { redirect_to @phone, notice: 'Phone was successfully updated.' }
+        format.html { redirect_to phones_path, notice: I18n.t("messages.updated") }
         format.json { render :show, status: :ok, location: @phone }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class PhonesController < ApplicationController
   def destroy
     @phone.destroy
     respond_to do |format|
-      format.html { redirect_to phones_url, notice: 'Phone was successfully destroyed.' }
+      format.html { redirect_to phones_path, notice: I18n.t("messages.destroyed") }
       format.json { head :no_content }
     end
   end

@@ -1,5 +1,8 @@
 <div class="basic-grey">
-  <p id="notice"><%= notice %></p>
+  
+  <script>
+    $.notify("<%= notice %>", "success")
+  </script>
 
   <h1><%= "#{t('messages.listing')} #{@addresses.model.model_name.human(count: @addresses.count)}" %></h1>
 

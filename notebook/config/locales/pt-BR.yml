@@ -6,6 +6,9 @@
         error: 
             one: Erro
             other: Erros
+        created: Registro criado com sucesso!
+        updated: Registro atualizado com sucesso!
+        destroyed: Registro removido com sucesso! 
     buttons:
         new: Novo
         show: Ver
